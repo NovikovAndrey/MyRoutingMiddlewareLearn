@@ -20,6 +20,14 @@ namespace MyRoutingMiddleware
             {
                 await context.Response.WriteAsync("Home page");
             }
+            else if (path=="/about")
+            {
+                await context.Response.WriteAsync("About ");
+            }
+            else
+            {
+                context.Response.StatusCode = 404;
+            }
         }
 
     }
