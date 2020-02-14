@@ -11,7 +11,7 @@ namespace MyRoutingMiddleware
         private RequestDelegate requestDelegate;
         public ErrorHandlingMiddleware(RequestDelegate request)
         {
-            requestDelegate = request
+            requestDelegate = request;
         }
         public async Task InvokeAsync(HttpContext context)
         {
