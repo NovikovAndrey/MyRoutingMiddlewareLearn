@@ -18,8 +18,8 @@ namespace MyRoutingMiddleware
             var token = context.Request.Query["token"];
             if (string.IsNullOrWhiteSpace(token))
             {
-                context.Response.StatusCode = 403;
-                await context.Response.WriteAsync("Access denied");
+                //context.Response.StatusCode = 403;
+                await context.Response.WriteAsync("Access to hell denied");
             }
             else
             {
